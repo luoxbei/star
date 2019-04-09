@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>门店查询 | 星巴克</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/stores.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<!--header-->
+<header>
+    <input type="text" placeholder="输入地址查找门店"><span><img src="img/storse/icon-search.svg" alt=""></span>
+</header>
+
+<div id="container"></div>
+
+<section>
+    <div class="cont">
+        <span><img src="img/storse/poi-marker-1.png" alt=""></span>
+        <div class="add">
+            <h2>西安开元店<img src="img/storse/delivery.png" alt=""></h2>
+            <p>西安市 解放市场6号开元商城负一楼  </p>
+            <p>912.4 km</p>
+            <img class="tan" src="img/storse/icon-info-green.svg" alt="">
+        </div>
+    </div>
+    <div class="cont">
+        <span><img src="img/storse/poi-marker-2.png" alt=""></span>
+        <div class="add">
+            <h2>西安李家村万达店</h2>
+            <p>西安市 碑林区 万达商业广场一层37号 雁塔路北段8号 </p>
+            <p>912.7 km</p>
+            <img class="tan" src="img/storse/icon-info-green.svg" alt="">
+        </div>
+    </div>
+    <div class="cont">
+        <span><img src="img/storse/poi-marker-3.png" alt=""></span>
+        <div class="add">
+            <h2>西安华清广场店</h2>
+            <p>西安市 陕西省西安市碑林区雁塔路99号李家村十字东南角华清广场1层    </p>
+            <p>912.8 km </p>
+            <img class="tan" src="img/storse/icon-info-green.svg" alt="">
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer>
+    <ul>
+        <li><a href="index.html">
+            <img src="img/index/icon-home.svg" alt="" class="active">
+            <span style="color: #00A862">首页</span>
+        </a></li>
+
+        <li><a href="stores.html">
+            <img src="img/storse/icon-stores-active.svg" alt="门店">
+            <span>门店</span>
+        </a></li>
+
+        <li><a href="login.html">
+            <img src="img/index/icon-account.svg" alt="账户">
+            <span>账户</span>
+        </a></li>
+
+        <li><a href="menu.html">
+            <img src="img/index/icon-menu.svg" alt="菜单">
+            <span>菜单</span>
+        </a></li>
+
+        <li><a href="more.html">
+            <img src="img/index/icon-more.svg" alt="更多">
+            <span>更多</span>
+        </a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&key=65c8c0090888749035e25689245f5bb9"></script>
+<script type="text/javascript">
+    $(function () {
+        var map = new AMap.Map('container',{
+            zoom:11,//级别
+            center: [108.87597,34.21809],//中心点坐标
+            viewMode:'3D',//使用3D视图
+            resizeEnable: true
+        });
+        map.clearMap();  // 清除地图覆盖物
+
+        var markers = [{
+            icon: 'img/storse/poi-marker-1.png',
+            position: [108.87596,34.21810]
+        }, {
+            icon: 'img/storse/poi-marker-2.png',
+            position: [108.87597,34.21809]
+        }, {
+            icon: 'img/storse/poi-marker-3.png',
+            position: [108.87598,34.31809]
+        }];
+
+        // 添加一些分布不均的点到地图上,地图上添加三个点标记，作为参照
+        markers.forEach(function(marker) {
+            new AMap.Marker({
+                map: map,
+                icon: marker.icon,
+                position: [marker.position[0], marker.position[1]],
+                offset: new AMap.Pixel(-13, -30)
+            });
+        });
+
+        var center = map.getCenter();
+
+    })
+</script>

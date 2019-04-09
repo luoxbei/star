@@ -1,0 +1,180 @@
+@charset "utf-8";
+/*css document*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height: 100%;
+    background: #f7f7f7;
+}
+html{
+    font-size:26.67vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family:"微软雅黑";
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+
+/*头部图片*/
+.header_img{
+    width: 100%;
+    position: relative;
+}
+.header_img img{
+    width: 100%;
+}
+.header_img .ad{
+    padding: 8px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: .16rem;
+    top: .16rem;
+}
+.header_img .fan{
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgba(222,222,222,0.5);
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    left: .16rem;
+    top: .16rem;
+}
+
+/*介绍*/
+.section{
+    width: 100%;
+    margin-top: .16rem;
+    padding-bottom: .16rem;
+}
+.intr{
+    color: #C2A661;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-left: .16rem;
+    letter-spacing: 1.2px;
+}
+.title{
+    font-size: .22rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-left: .16rem;
+    letter-spacing: 1.2px;
+}
+.section ul {
+    padding: 0 .12rem;
+    font-size: .16rem;
+    list-style:disc;
+}
+.section ul li{
+    margin-left:  .36rem;
+    margin-bottom: 12px;
+    line-height: .24rem;
+    letter-spacing: 1.2px;
+}
+
+/*猜你喜欢*/
+.like{
+    width: 100%;
+    margin-top: .16rem;
+    position: relative;
+    background-color: #e8e8e8;
+}
+.like_title{
+    font-size: .2rem;
+    padding-left: .2rem;
+    margin-bottom: .5rem;
+}
+.BOx{
+    overflow-x: scroll;
+    width: 100%;
+}
+.scroll{
+    display: flex;
+    position: relative;
+    padding-bottom: .3rem;
+}
+.scroll a{
+    flex-shrink: 0;
+    display: inline-block;
+    width: auto;
+    margin-left: .2rem;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.scroll a img{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+
+
+}
+.scroll a p{
+    font-weight: bold;
+    font-size: .16rem;
+    text-align: center;
+    color:#333333;
+    padding: 10px 0;
+}
+.btnn {
+    top: 50%;
+    height: .8rem;
+    border-width: 0px;
+    border: 0;
+    position: absolute;
+    width: .8rem;
+    opacity: 0.8;
+    font-size: 0.26rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.next {
+    right: 0px;
+}
+.prev {
+    left: 0px;
+}
+.prev .btn1 {
+    line-height: .37rem;
+    font-family: nike-glyphs;
+}
+.btnn .btn1, .btn2 {
+    font-size: .16rem;
+    font-weight: 400;
+    height: .28rem;
+    line-height: .28rem;
+    width: .28rem;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: .2rem;
+    color: rgb(51, 51, 51);
+}
+.main{
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

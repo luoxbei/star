@@ -1,0 +1,137 @@
+@charset "utf-8";
+/*css document*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height: 100%;
+    background: #f7f7f7;
+}
+html{
+    font-size:26.67vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family:"微软雅黑";
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+
+/*header*/
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #888888;
+    margin-bottom: .3rem;
+}
+header h2{
+    font-size: .22rem;
+    padding-left: .16rem;
+    padding-top: .16rem;
+    margin-bottom: 12px;
+}
+header li{
+    float: left;
+    padding: .16rem;
+    font-size: .16rem;
+}
+header li a{
+    color: #333333;
+}
+
+header li:first-child a{
+    font-weight: bold;
+    position: relative;
+}
+header li:first-child a::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    border: 2px solid #00A862;
+    position: absolute;
+    bottom: -0.16rem;
+    left: 0;
+}
+
+/*section*/
+section{
+    padding: .16rem;
+    font-size: .16rem;
+}
+.text{
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: .16rem;
+    background-color: #f7f7f7;
+    margin-bottom: .2rem;
+    letter-spacing: 2.2px;
+    outline:none;
+}
+#check{
+    border: 1px solid #00A862;
+    border-radius: 8px;
+    -webkit-appearance:none;
+    opacity: 1;
+    float: left;
+    height: 30px;
+    margin: -4px 8px 0 0;
+    width: 30px;
+    box-sizing: border-box;
+    color: white;
+    outline: none;
+}
+#check:checked:after{
+    background-color: #00A862;
+    content: "✔";
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    font-size: .2rem;
+    outline: none;
+}
+section label{
+    color: #00A862;
+}
+.forget{
+    float: right;
+    color: #00A862;
+    font-size: 12px;
+    padding-top: 5px;
+}
+button{
+    margin: 15px 15px;
+    padding: 10px 0;
+    border-radius: 15px;
+    display: block;
+    float: right;
+    border: none;
+    text-align: center;
+    font-size: .18rem;
+    color: white;
+    overflow: hidden;
+    background-color: yellowgreen;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+}
+.kong{
+    padding-top:2.45rem;
+}
