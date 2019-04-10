@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册星享俱乐部帐户 | 星巴克</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!--header-->
+<header>
+    <h2>登录或创建一个新帐户 🌟</h2>
+    <div>
+        <ul>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于星享俱乐部</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="main">
+<!--register-->
+    <div class="register_tab">
+
+             <span class="app_box">使用星巴克App注册</span><span class="car_box">卡号密码注册</span>
+    </div>
+    <!--使用星巴克App注册-->
+    <div class="app_register_box">
+
+        <!--文字-->
+        <div class="text_box">
+            <h2>使用星巴克App进行注册</h2>
+            <p>现在就下载 <a href="">星巴克App</a>便可直接用手机进行注册、支付、查看消费记录及管理卡片。</p>
+        </div>
+
+        <!--图片-->
+        <div class="img_box">
+            <img src="img/index/register-download-app-image-cn.png" alt="">
+        </div>
+
+
+        <a class="fixed_img">
+            <img src="img/index/udp-starbucks-cn.png" alt="">
+        </a>
+    </div>
+
+    <!--卡号密码注册-->
+    <div class="car_register_box">
+        <input type="text" placeholder="输入您的星享卡号" class="text_input">
+        <input type="password" placeholder="输入密码">
+        <a href="" class="what">这是什么？</a>
+        <p class="what_text">
+            如果您曾购买了星享卡，在购买星享卡后的60天内，您可使用该星享卡注册您的星享俱乐部帐户，或者将该星享卡关联到您既有的星享俱乐部帐户下。
+        </p>
+    </div>
+
+</div>
+
+<!--footer-->
+<footer>
+    <ul>
+        <li><a href="index.html">
+            <img src="img/index/icon-home.svg" alt="" class="active">
+            <span>首页</span>
+        </a></li>
+
+        <li><a href="stores.html">
+            <img src="img/index/icon-stores.svg" alt="门店">
+            <span>门店</span>
+        </a></li>
+
+        <li><a href="login.html">
+            <img src="img/index/icon-account-active.svg" alt="账户">
+            <span style="color: #00A862">账户</span>
+        </a></li>
+
+        <li><a href="menu.html">
+            <img src="img/index/icon-menu.svg" alt="菜单">
+            <span>菜单</span>
+        </a></li>
+
+        <li><a href="more.html">
+            <img src="img/index/icon-more.svg" alt="更多">
+            <span>更多</span>
+        </a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".app_box").click(function () {
+            $(".car_register_box").css({display:"none"});
+            $(".app_register_box").css({display:"block"});
+            $(".app_box").css({background:"#00A862",color:"white"});
+            $(".car_box").css({border:"1px solid #00A862",background:"white",color:"#00A862"})
+        })
+        $(".car_box").click(function () {
+            $(".car_register_box").css({display:"block"});
+            $(".app_register_box").css({display:"none"});
+            $(".car_box").css({background:"#00A862",color:"white"});
+            $(".app_box").css({border:"1px solid #00A862",background:"white",color:"#00A862"})
+        })
+    })
+
+</script>

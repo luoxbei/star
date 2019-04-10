@@ -1,0 +1,184 @@
+/*header*/
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #888888;
+}
+header h2{
+    font-size: .22rem;
+    padding-left: .16rem;
+    padding-top: .16rem;
+    margin-bottom: 12px;
+}
+header li{
+    float: left;
+    padding: .16rem;
+    font-size: .16rem;
+}
+header li a{
+    color: #333333;
+}
+
+header li:last-child a{
+    font-weight: bold;
+    position: relative;
+}
+header li:last-child a::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    border: 2px solid #00A862;
+    position: absolute;
+    bottom: -0.16rem;
+    left: 0;
+}
+
+
+/*banner*/
+.banner{
+    position: relative;
+}
+.ad{
+    display:block;
+    width: .3rem;
+    text-align: center;
+    letter-spacing: 2.2px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    opacity: 0.6;
+    border-radius: 2px;
+}
+.banner a img{
+    width: 100%;
+}
+
+/*欢迎来到星星俱乐部*/
+.welcome_box{
+    width: 100%;
+    background-color:  #252525;
+}
+.welcom{
+    padding: .2rem .16rem;
+}
+.welcom_title img{
+    width: 100%;
+}
+.grid{
+    overflow: hidden;
+}
+.item{
+    width: 50%;
+    clear: none;
+    float: left;
+    height: 2rem;
+    margin-bottom: .25rem;
+    /*padding: 0 .12rem;*/
+}
+.height{
+    height: 1.2rem;
+}
+.item_img{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.item_img img{
+     width: .8rem;
+    margin: 0 auto;
+}
+.item .content h2{
+    font-size: .14rem;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.item .content p{
+    font-size: .12rem;
+    text-align: center;
+    color: #f7f7f7;
+    margin: 6px 3px;
+    line-height: 150%;
+}
+.tips{
+    font-size: .10rem;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.tips p a{
+    color: #00A862;
+}
+.welcom_footer img{
+    width: 100%;
+}
+/*积星升级*/
+.ji{
+    background-color: #f0efed;
+}
+.ji_footer img{
+    width: 100%;
+}
+ .item_ji{
+    width: 100%;
+     display: flex;
+   margin-bottom: .2rem;
+}
+.item_ji img{
+    width: .82rem;
+    height:.65rem;
+    margin-right: 8px;
+    margin-top: 10px;
+    float: left;
+}
+.item_ji .content{
+    font-size: .12rem;
+    text-align: left;
+    color:  rgba(0, 0, 0, 0.87);
+    line-height: 150%;
+    float: right;
+    margin-top: .2rem;
+
+}
+.tu img{
+    width: 100%;
+}
+
+
+.problem{
+    width: 100%;
+}
+.imgas{
+    width: .3rem;
+    float: left;
+    margin: 0 .3rem;
+}
+.padding{
+    padding: 0 0 0 .2rem;
+    margin-top: 10px;
+    margin-bottom
+    : 10px;
+}
+.panel-heading {
+    background-color: white;
+    border-radius: 0;
+    border: none;
+    color: #888888;
+}
+div[class*='col-'] {
+    padding: 0;
+}
+.main{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.main{
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+

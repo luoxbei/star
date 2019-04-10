@@ -1,0 +1,135 @@
+/*header*/
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #888888;
+    margin-bottom: .3rem;
+}
+header h2{
+    font-size: .22rem;
+    padding-left: .16rem;
+    padding-top: .16rem;
+    margin-bottom: 12px;
+}
+header li{
+    float: left;
+    padding: .16rem;
+    font-size: .16rem;
+}
+header li a{
+    color: #333333;
+}
+
+header li:nth-child(2) a{
+    font-weight: bold;
+    position: relative;
+}
+header li:nth-child(2) a::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    border: 2px solid #00A862;
+    position: absolute;
+    bottom: -0.16rem;
+    left: 0;
+}
+
+.register_tab{
+    width: 100%;
+    overflow: hidden;
+}
+.register_tab span{
+    display: block;
+    float: left;
+    font-size: .14rem;
+    margin: .2rem 0 .2rem 0;
+    padding: .1rem .16rem;
+    letter-spacing: 1.4px;
+}
+.register_tab .app_box{
+    margin-left: .4rem;
+    background-color: #00A862;
+    color: #FFFFFF;
+    border-bottom-left-radius: .2rem;
+    border-top-left-radius: .2rem;
+
+}
+.register_tab .car_box{
+    box-sizing: border-box;
+    border: 1px solid #00A862;
+    border-bottom-right-radius: .2rem;
+    border-top-right-radius: .2rem;
+    color: #00A862;
+
+}
+.text_box{
+   padding: .3rem;
+}
+.text_box h2{
+    font-size: .2rem;
+    font-weight: normal;
+    margin-bottom: .2rem;
+}
+.text_box p {
+    font-size: .16rem;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 1px;
+}
+.text_box p a{
+    color: #00A862;
+}
+.img_box {
+    margin-bottom: .2rem;
+}
+.img_box img{
+    margin: 0 auto;
+    width: 1.94rem;
+}
+.main{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.fixed_img{
+    display: block;
+    position: absolute;
+    bottom: .6rem;
+    right: .16rem;
+}
+.fixed_img img{
+    width: 1.3rem;
+}
+
+.app_register_box{
+    display: block;
+}
+.car_register_box{
+    display: none;
+}
+.car_register_box input{
+    display: block;
+    margin: .3rem;
+    border: none;
+    border-bottom: 1px solid #00A862;
+    font-size: .16rem;
+    padding: .12rem 0;
+    width: 80%;
+    background-color: #f7f7f7;
+    outline: none;
+}
+.what{
+    display: block;
+    font-size: .14rem;
+    color: #00A862;
+    margin: 0 .3rem;
+}
+.what_text{
+    padding: .16rem .3rem;
+    font-size: .16rem;
+    line-height: 160%;
+    letter-spacing: 1.2px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+
